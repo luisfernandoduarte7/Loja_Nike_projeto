@@ -1,0 +1,21 @@
+<div class="loja-list">
+    <h2>The insole are confortable so you can wear thern everday</h2>
+    <ul>
+        <li *ngFor="let loja of loja">
+            
+            <div class="bg">
+                <img src="{{loja.img}}" alt="" class="tenis">
+            
+                <div class="coracao">
+                    ❤️
+
+                </div>
+            </div>
+            <h3 class="name">{{ loja.nome }}</h3>
+            <p class="descricao">{{ loja.descricao}}</p>
+            <div class="canto"> <p class="preco">{{ loja.preco| currency: 'BRL' }}</p>
+            <button onclick="">Add to cart</button>
+        </div>
+        </li>
+    </ul>
+</div>
